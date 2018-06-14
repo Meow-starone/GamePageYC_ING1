@@ -4,13 +4,13 @@
     <img src="../assets/img/logo.png">
     </div>
     <div class="bannerimg"></div>
-    <div class="navtxt">如何安装NAS钱包——移动端</div>
+    <div id="navtxt" class="navtxt">如何安装NAS钱包——移动端</div>
     <div class="detailtxt">
       <div><router-link to="/TextPage">首页</router-link> > 公告 > 如何安装NAS钱包——移动端</div>
       <div>2018-6-13</div>
     </div>
     <hr class="hrbiu">
-    <div class="content">
+    <div id="content" class="content">
       <h2>下载</h2><br>
       下载星云钱包NAS nano地址：https://nano.nebulas.io/ <br>
       <center><img src="../assets/img/mb1.png"></center>
@@ -105,5 +105,24 @@
   }
   .content img{
     margin:0.2rem 0;
+  }
+</style>
+<style>
+  @media only screen and (max-width: 768px){
+      #content{
+      width: 8rem;
+      margin: 0 auto;
+      margin-top: 0.4rem;
+      text-align: left;
+      font-size: 0.26rem;
+    }
+      #navtxt{
+      text-align: center;
+      width: 10rem;
+      height: 1.28rem;
+      font-size: 0.314rem;
+      line-height: 1.28rem;
+      font-weight: bold;
+    }
   }
 </style>

@@ -4,7 +4,7 @@
     <img src="../assets/img/logo.png">
     </div>
     <div class="bannerimg"></div>
-    <div class="navtxt">开服公告</div>
+    <div id="navtxt" class="navtxt">开服公告</div>
     <div class="detailtxt">
       <div><router-link to="/TextPage">首页</router-link> > 
         <!-- <el-button @click="toaddress">555555</el-button> -->
@@ -12,7 +12,7 @@
       <div>2018-6-13</div>
     </div>
     <hr class="hrbiu">
-    <div class="content">
+    <div id="content" class="content">
       
       《异虫危机Zerg Crisis》今日X时移动端PC端同步劲爆开服！打造星云链最激爽顶视角挂机游戏！<br>
 	  
@@ -112,4 +112,23 @@
     margin:0.2rem 0;
   }
 
+</style>
+<style>
+  @media only screen and (max-width: 768px){
+      #content{
+      width: 8rem;
+      margin: 0 auto;
+      margin-top: 0.4rem;
+      text-align: left;
+      font-size: 0.26rem;
+    }
+      #navtxt{
+      text-align: center;
+      width: 10rem;
+      height: 1.28rem;
+      font-size: 0.314rem;
+      line-height: 1.28rem;
+      font-weight: bold;
+    }
+  }
 </style>

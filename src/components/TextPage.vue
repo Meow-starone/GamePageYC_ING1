@@ -4,7 +4,7 @@
     <img src="../assets/img/logo.png">
   </div>
   <div class="bannerimg"></div>
-  <div class="newstxt">
+  <div id="newstxt" class="newstxt">
     <img src="../assets/img/b_r.png">
     <div>新闻资讯</div>
     <img src="../assets/img/b_l.png">
@@ -12,14 +12,14 @@
 
   <el-tabs v-model="activeName" @tab-click="handleClick">
     <el-tab-pane label="最新" name="first">
-      <div class="notice1">
-        <div class="noticeico">
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>公告</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle1">如何安装NAS钱包——PC端</router-link></div>
             <div>2018-6-13</div>
           </div>
@@ -30,14 +30,14 @@
         </div>
       </div>
 
-      <div class="notice1">
-        <div class="noticeico">
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>公告</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle2">如何安装NAS钱包——移动端</router-link></div>
             <div>2018-6-13</div>
           </div>
@@ -52,14 +52,14 @@
 
     </el-tab-pane>
     <el-tab-pane label="活动" name="third">
-      <div class="notice1">
-        <div class="noticeico">
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>活动</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle4">异虫危机劲爆开服</router-link></div>
             <div>2018-6-13</div>
           </div>
@@ -70,14 +70,14 @@
         </div>
       </div>
 
-      <div class="notice1">
-        <div class="noticeico">
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>活动</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle3">庆开服</router-link></div>
             <div>2018-6-13</div>
           </div>
@@ -88,34 +88,34 @@
       </div>
 
     </el-tab-pane>
-    <el-tab-pane label="公告" name="fourth" id="a">
-      <div class="notice1">
-        <div class="noticeico">
+    <el-tab-pane label="公告" name="fourth">
+
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>公告</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle5">开服公告</router-link></div>
             <div>2018-6-13</div>
           </div>
           <div class="noticetittleline2">
             《异虫危机Zerg Crisis》今日X时移动端PC端同步劲爆开服！打造星云链最激爽顶视角挂机游戏！<br>
             向低质量粗糙半成品说不！区块链游戏一样可以高品质高完成度！刺激的战斗，精致的角色设计，流畅的画面，优秀的数值成长，等你来体验！
-
           </div>
         </div>
       </div>
-<!-- sdsada -->
-      <div class="notice1">
-        <div class="noticeico">
+
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>公告</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle1">如何安装NAS钱包——PC端</router-link></div>
             <div>2018-6-13</div>
           </div>
@@ -125,24 +125,31 @@
           </div>
         </div>
       </div>
+      
 
-      <div class="notice1">
-        <div class="noticeico">
+
+      <div id="notice1" class="notice1">
+        <div id="noticeico" class="noticeico">
           <img src="../assets/img/line_r.png">
           <div>公告</div>
           <img src="../assets/img/line_l.png">
         </div>
         <div class="noticetittle">
-          <div class="noticetittleline1">
+          <div id="noticetittleline1" class="noticetittleline1">
             <div><router-link to="/Tittle2">如何安装NAS钱包——移动端</router-link></div>
             <div>2018-6-13</div>
           </div>
           <div class="noticetittleline2">
             下载星云钱包NAS nano地址：https://nano.nebulas.io/ <br>
             按照APP的提示操作即可。
+
           </div>
         </div>
       </div>
+
+      
+
+
 
     </el-tab-pane>
   </el-tabs>
@@ -302,6 +309,7 @@ console.log(this.$route);
   .noticetittleline1 a{
     color: #393a3d;
     text-decoration:none;
+
   }
 </style>
 <style>
@@ -317,5 +325,96 @@ console.log(this.$route);
     width: 4rem;
     display: flex;
   }
+  @media only screen and (max-width: 768px){
+      .el-tabs__item{
+      font-size: 0.3rem;
+      margin-bottom: 0.1rem;
+      /*margin-left: 0.2rem;*/
+      flex: 1;
+    }
+    .el-tabs__nav-scroll{
+    width: 10rem;
+    display: flex;
+    margin-left: -0.45rem;
+  }
+  }
 </style>
+<style type="text/css">
+  @media only screen and (max-width: 768px){
+     #notice1{
+      width: 10rem;
+      height: 5rem;
+      /*background-color: pink;*/
+    }
+    .noticetittle .noticetittleline2{
+    height: 1rem;
+    width: 6.2rem;
+    float: left;
+    margin-left: 0.2rem;
+    text-align: left;
+    margin-left: 0.8rem;
+    font-size: 0.3rem;
+    line-height: 0.45rem;
+  }
+  #noticetittleline1 div:nth-child(1){
+    height: 0.696rem;
+    width: 5rem;
+    float: left;
+    font-size: 0.314rem;
+    /*margin-left: 0.2rem;*/
+    text-align: left;
+    padding-left: 0.8rem;
+    line-height: 0.696rem;
+    /*background-color: pink;*/
+    font-weight: bold;
+  }
+  #noticetittleline1 div:nth-child(2){
+    /*height: 0.696rem;*/
+    width: 1rem;
+    float: right;
+    font-size: 0.107rem;
+    margin-top: 0.33rem;
+    margin-right: 0rem;
+  }
+
+  #noticeico img:nth-child(1){
+    float: right;
+    margin-top: -0.04rem;
+    width: 0.272rem;
+    height: 0.272rem;
+  }
+  #noticeico div:nth-child(2){
+    float: right;
+    font-size: 0.3rem;
+    font-weight: bold;
+  }
+  #noticeico img:nth-child(3){
+    float: right;
+    margin-top: 0.07rem;
+    width: 0.272rem;
+    height: 0.272rem;
+  }
+
+  #newstxt img:nth-child(1){
+    float: left;
+    width: 0.22rem;
+    height: 0.238rem;
+    margin-top: 0.1rem;
+  }
+  #newstxt div:nth-child(2){
+    float: left;
+    font-size: 0.344rem;
+    font-weight: bold;
+    margin: 0 0.22rem;
+    margin-top: -0.02rem;
+  }
+  #newstxt img:nth-child(3){
+    float: left;
+    width: 0.22rem;
+    height: 0.238rem;
+    margin-top: 0.1rem;
+  }
+  }
+</style>
+
 

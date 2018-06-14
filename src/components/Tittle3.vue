@@ -4,13 +4,13 @@
     <img src="../assets/img/logo.png">
     </div>
     <div class="bannerimg"></div>
-    <div class="navtxt">庆开服，累计在线送NAS！</div>
+    <div id="navtxt" class="navtxt">庆开服，累计在线送NAS！</div>
     <div class="detailtxt">
       <div><router-link to="/TextPage">首页</router-link> > 活动 > 庆开服，累计在线送NAS！</div>
       <div>2018-6-13</div>
     </div>
     <hr class="hrbiu">
-    <div class="content">
+    <div id="content" class="content">
       
       开服活动第二弹：庆开服，累计在线送NAS！<br>
 	  
@@ -110,5 +110,24 @@
     margin-top: 0.5rem;
     text-align: right;
     font-size: 0.11rem;
+  }
+</style>
+<style>
+  @media only screen and (max-width: 768px){
+      #content{
+      width: 8rem;
+      margin: 0 auto;
+      margin-top: 0.4rem;
+      text-align: left;
+      font-size: 0.26rem;
+    }
+      #navtxt{
+      text-align: center;
+      width: 10rem;
+      height: 1.28rem;
+      font-size: 0.314rem;
+      line-height: 1.28rem;
+      font-weight: bold;
+    }
   }
 </style>
