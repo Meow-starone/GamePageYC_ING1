@@ -130,7 +130,7 @@
       goToPlay() {
 //        this.$message('游戏即将开放，请期待！');
 //        location.href = 'http://zerg.oowan.com/';
-        location.href = 'zerg.game.oowan.com:3002';
+        location.href = 'http://zerg.game.oowan.com:3002';
 
       },
       showRegisterDialog() {
@@ -452,7 +452,10 @@
     .shouye header {
       height: 0.8rem;
     }
-
+    .shouye header img{
+      height:2rem;
+      margin-top:0.4rem;
+    }
     .shouye .contain_bg #start_game {
       width: 3rem;
       margin-top: 8rem;
