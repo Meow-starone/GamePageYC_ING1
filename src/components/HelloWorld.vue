@@ -79,6 +79,17 @@
 
     <register id="register_dialog" :dialogData="dialogData"></register>
 
+    <!--<el-dialog class="inviteCode"-->
+      <!--title="提示"-->
+      <!--:visible.sync="dialogData.inviteCodeDialogVisible"-->
+      <!--width="30%"-->
+      <!--:before-close="handleClose">-->
+      <!--<span>这是一段信息</span>-->
+      <!--<span slot="footer" class="dialog-footer">-->
+      <!--<el-button type="primary" @click="dialogData.inviteCodeDialogVisible = false">确 定</el-button>-->
+      <!--</span>-->
+    <!--</el-dialog>-->
+
   </div>
 </template>
 
@@ -92,8 +103,9 @@
         activeName: 'second',
         showVideo: false,
         dialogData: {
-          dialogVisible: false
-        }
+          dialogVisible: false,
+          // inviteCodeDialogVisible: false
+        },
       }
     },
     methods: {

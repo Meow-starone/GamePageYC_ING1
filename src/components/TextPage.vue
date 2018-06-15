@@ -1,7 +1,7 @@
 <template>
   <div class="TextPage">
     <div class="bannercolor">
-      <img src="../assets/img/logo.png">
+      <router-link to="/HelloWorld"><img src="../assets/img/logo.png"></router-link>
     </div>
     <div class="bannerimg"></div>
     <div id="newstxt" class="newstxt">

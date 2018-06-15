@@ -6,7 +6,7 @@
     <div class="bannerimg"></div>
     <div id="navtxt" class="navtxt">如何安装NAS钱包——移动端</div>
     <div class="detailtxt">
-      <div><router-link to="/TextPage">首页</router-link> >
+      <div class="detailtex1"><router-link to="/TextPage">首页</router-link> >
         <router-link :to="{ path: '/TextPage', query:{ activeName: 'fourth' }}">公告</router-link>
         > 如何安装NAS钱包——移动端</div>
       <div>2018-6-15</div>
@@ -87,7 +87,7 @@
     color: gray;
   }
   .detailtxt div:nth-child(1){
-    width: 3rem;
+    width: 5rem;
     float: left;
     text-align: left;
     margin-left: 1rem;

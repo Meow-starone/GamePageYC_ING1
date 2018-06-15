@@ -15,17 +15,20 @@
 
         <div>
           <label for="address"></label>
-          <input id="verification" placeholder="请输入Nas钱包地址" name="address" type="txt" class="u-txt" v-model="address"><br/>
+          <input id="verification" placeholder="请输入Nas钱包地址" name="address" type="txt" class="u-txt"
+                 v-model="address"><br/>
 
         </div>
         <div>
           <label for="password"></label>
-          <input id="password" placeholder="请输入密码" name="password" type="password" class="u-txt" v-model="password"><br/>
+          <input id="password" placeholder="请输入8-12位密码" name="password" type="password" class="u-txt"
+                 v-model="password"><br/>
 
         </div>
         <div>
           <label for="invitation"></label>
-          <input id="invitation" placeholder="请输入邀请码" name="invitation" type="txt" class="u-txt" v-model="invitation"><br/>
+          <input id="invitation" placeholder="请输入邀请码" name="invitation" type="txt" class="u-txt"
+                 v-model="invitation"><br/>
 
         </div>
 
@@ -34,8 +37,8 @@
         </div>
       </div>
     </div>
-
   </el-dialog>
+
 </template>
 
 <script>
@@ -65,20 +68,52 @@
         let reg2 = /^[a-zA-Z0-9]{8,12}$/;
         let areg2 = reg2.test(this.password);
         if (areg1 == false) {
+
+          // this.dialogData.inviteCodeDialogVisible = true;
+
+
           this.nickname = '';
           this.$message.error('用户名必须在6-12位');
         } else if (areg2 == false) {
           this.password = '';
           this.$message.error('密码长度必须在8-12位');
         } else {
-          axios.post('http://192.168.1.212:9000/register', sendData)
+          axios.post('http://43.255.52.14:9000/register', sendData)
             .then((res) => {
               if (res.data.code == 0) {
-                // window.location.href = 'zerg.oowan.com'
-                this.$message.success('注册成功');
-              } else if (res.data.code == 1) {
-                this.$message.warning('钱包地址已注册');
-              } else {
+                this.dialogData.dialogVisible = false;
+                console.log(res);
+                this.$notify({
+                  title: '注册成功',
+                  message: '你的邀请码是:' + res.data.data.inviteStr + '；邀请码最多使用10次',
+                  type: 'success',
+                  duration: 0,
+                  offset: 100
+                });
+              }
+              else if (res.data.msg === 'nickname already exist') {
+
+                this.$message('该昵称已注册！')
+
+              }
+              else if (res.data.msg === 'address already exist') {
+
+                axios.get('http://43.255.52.14:9000/inviteCode/'+this.address).then((res) => {
+                  if (res.data.code == 0) {
+                    console.log(res);
+                    this.$notify({
+                      title: '钱包地址已注册',
+                      message: '你的邀请码是:' + res.data.data.inviteId + ',(邀请码次数：' + res.data.data.residueCount + '/10)',
+                      duration: 0,
+                      offset: 100
+                    });
+                  } else {
+                    this.$message('该钱包地址已注册！')
+                  }
+                }).catch((err) => {
+                })
+              }
+              else {
                 alert(res.data.msg);
               }
             })
@@ -95,12 +130,11 @@
 </script>
 
 <style lang="less" rel="stylesheet/less">
-  .el-dialog {
-    width: 350px;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
   #register_dialog {
+    .el-dialog {
+      width: 350px;
+      background-color: rgba(0, 0, 0, 0);
+    }
     .el-dialog__header {
       padding: 0;
     }
@@ -112,8 +146,6 @@
       padding: 0;
     }
   }
-
-
 </style>
 <style lang="less" rel="stylesheet/less" scoped>
   .m-form input {

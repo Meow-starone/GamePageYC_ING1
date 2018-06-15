@@ -98,7 +98,7 @@
   }
 
   .detailtxt div:nth-child(1) {
-    width: 3rem;
+    width: 4rem;
     float: left;
     text-align: left;
     margin-left: 1rem;
