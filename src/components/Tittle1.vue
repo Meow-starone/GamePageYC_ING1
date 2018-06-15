@@ -6,13 +6,15 @@
     <div class="bannerimg"></div>
     <div id="navtxt" class="navtxt">如何安装NAS钱包——PC端</div>
     <div class="detailtxt">
-      <div><router-link to="/TextPage">首页</router-link> > 公告 > 如何安装NAS钱包——PC端</div>
-      <div>2018-6-13</div>
+      <div><router-link to="/TextPage">首页</router-link> >
+        <router-link :to="{ path: '/TextPage', query:{ activeName: 'fourth' }}">公告</router-link>
+        > 如何安装NAS钱包——PC端</div>
+      <div>2018-6-15</div>
     </div>
     <hr class="hrbiu">
     <div id="content" class="content">
       <h2>安装</h2><br>
-      1.下载地址：https://github.com/ChengOrangeJu/WebExtensionWallet 
+      1.下载地址：https://github.com/ChengOrangeJu/WebExtensionWallet
       进入下载地址，选择下载ZIP文件并解压，或复制到本地环境中（需安装GitHub）。<br>
       <center><img src="../assets/img/p1.jpg"></center>
 

@@ -6,20 +6,22 @@
     <div class="bannerimg"></div>
     <div id="navtxt" class="navtxt">如何安装NAS钱包——移动端</div>
     <div class="detailtxt">
-      <div><router-link to="/TextPage">首页</router-link> > 公告 > 如何安装NAS钱包——移动端</div>
-      <div>2018-6-13</div>
+      <div><router-link to="/TextPage">首页</router-link> >
+        <router-link :to="{ path: '/TextPage', query:{ activeName: 'fourth' }}">公告</router-link>
+        > 如何安装NAS钱包——移动端</div>
+      <div>2018-6-15</div>
     </div>
     <hr class="hrbiu">
     <div id="content" class="content">
       <h2>下载</h2><br>
       下载星云钱包NAS nano地址：https://nano.nebulas.io/ <br>
       <center><img src="../assets/img/mb1.png"></center>
-	  
+
 	  <h2>注册与导入</h2><br>
       按照APP的提示操作即可。<br>
       注：网页钱包插件仅导出了json格式的Keystore文件，可以使用记事本打开复制keystore字符串。<br>
       <br>
-      
+
 	  <h2>复制地址</h2><br>
       点开NAS nano钱包APP，选择“我要收币”打开收款页，点击二维码左下方的“复制地址”即可。<br>
       打开游戏链接，粘贴钱包地址注册账号，进入游戏链接体验恐龙星球吧！<br>

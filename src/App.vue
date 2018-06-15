@@ -14,6 +14,7 @@
 <style>
   @import './assets/css/common.less';
   @import './assets/css/reset.less';
+  /*@import './assets/css/responsive.less';*/
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;

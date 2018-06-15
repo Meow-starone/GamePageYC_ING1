@@ -1,32 +1,38 @@
 <template>
   <div class="Tittle3">
     <div class="bannercolor">
-    <img src="../assets/img/logo.png">
+      <img src="../assets/img/logo.png">
     </div>
     <div class="bannerimg"></div>
     <div id="navtxt" class="navtxt">异虫危机劲爆开服，冲排名赠豪礼！</div>
     <div class="detailtxt">
-      <div><router-link to="/TextPage">首页</router-link> > 活动 > 异虫危机劲爆开服</div>
-      <div>2018-6-13</div>
+      <div>
+        <router-link to="/TextPage">首页</router-link>
+        >
+        <router-link :to="{ path: '/TextPage', query:{ activeName: 'third' }}">活动</router-link>
+        > 异虫危机劲爆开服
+      </div>
+      <div>2018-6-15</div>
     </div>
     <hr class="hrbiu">
     <div id="content" class="content">
-      
+
       开服活动第一弹：冲排名，赠豪礼！<br>
-	  
-	  
-      活动时间：2018年6月X日 — 2018年6月19日<br>
+
+
+      活动时间：2018年6月15日 — 2018年6月19日<br>
       <br>
       活动规则：<br>
-      为鼓励玩家加速冲关，将举行为期一周的冲排名活动！我们将会为排名最靠前的30位玩家准备丰厚的奖品，奖品内容包括但不限于NAS、游戏道具。
+      为鼓励玩家加速冲关，将举行为期5天的冲排名活动！我们将会为排名最靠前的30位玩家准备丰厚的奖品，奖品内容包括但不限于NAS、游戏道具。
       活动期间请玩家们努力突破关卡，冲击更高层！
       <br>
-      参与要求：注册星云钱包并进行过NAS消费。
+      参与要求：<a>由于必须数据上链才能参与排名，所以必须注册NAS钱包并进行过NAS消费后上链的账号才能参与活动。</a>
       <br>
-      
-	  
+
+      <br>
+      <br>
       更多详细内容请关注《异虫危机》官方公众号ycwj_bipa 或扫下方二维码：<br>
-      
+
       <center><img src="../assets/img/qingkaifu.jpg"></center>
       <br>
       <br>
@@ -38,20 +44,21 @@
 
 <script>
   export default {
-    data () {
+    data() {
       return {};
     },
-    methods:{},
+    methods: {},
   };
 </script>
 
 <style scoped>
-   .Tittle3{
-      width: 100%;
-      height: 100%;
-      overflow: auto;
+  .Tittle3 {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
   }
-  .bannercolor{
+
+  .bannercolor {
     background-image: url(../assets/img/nav_bg.png);
     background-size: 100% 0.827rem;
     background-repeat: no-repeat;
@@ -60,12 +67,14 @@
     z-index: 99;
     position: relative;
   }
-  .bannercolor img{
+
+  .bannercolor img {
     width: 1.96rem;
     height: 0.637rem;
     margin-top: 0.13rem;
   }
-  .bannerimg{
+
+  .bannerimg {
     width: 100%;
     height: 2.976rem;
     margin-top: -0.637rem;
@@ -73,30 +82,44 @@
     background-size: 10rem 2.976rem;
     background-repeat: no-repeat;
   }
-  .navtxt{
+
+  .navtxt {
     text-align: center;
     width: 10rem;
     height: 1.28rem;
     font-size: 0.214rem;
     line-height: 1.28rem;
   }
-  .detailtxt{
+
+  .detailtxt {
     width: 10rem;
     font-size: 0.1rem;
     color: gray;
   }
-  .detailtxt div:nth-child(1){
+
+  .detailtxt div:nth-child(1) {
     width: 3rem;
     float: left;
     text-align: left;
     margin-left: 1rem;
   }
-  .detailtxt div:nth-child(2){
+
+  .detailtxt div:nth-child(2) {
     width: 2rem;
     float: left;
   }
-  .hrbiu{width: 10rem;border-top:0.005rem solid gray;font-size:0px;border-right:0px; border-bottom:0px; border-left:0px;margin-top: 0.2rem}
-  .content{
+
+  .hrbiu {
+    width: 10rem;
+    border-top: 0.005rem solid gray;
+    font-size: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    margin-top: 0.2rem
+  }
+
+  .content {
     width: 6rem;
     margin: 0 auto;
     margin-top: 0.4rem;
@@ -104,25 +127,28 @@
     font-size: 0.1228rem;
     /*text-indent:2em;*/
   }
-  .content img{
-    margin:0.2rem 0;
+
+  .content img {
+    margin: 0.2rem 0;
   }
-    .bottomtxt{
+
+  .bottomtxt {
     margin-top: 0.5rem;
     text-align: right;
     font-size: 0.11rem;
   }
 </style>
 <style>
-  @media only screen and (max-width: 768px){
-      #content{
+  @media only screen and (max-width: 768px) {
+    #content {
       width: 8rem;
       margin: 0 auto;
       margin-top: 0.4rem;
       text-align: left;
       font-size: 0.26rem;
     }
-      #navtxt{
+
+    #navtxt {
       text-align: center;
       width: 10rem;
       height: 1.28rem;

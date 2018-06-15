@@ -4,33 +4,36 @@
       <img src="../assets/img/logo.png">
     </div>
     <div class="bannerimg"></div>
-    <div id="navtxt" class="navtxt">庆开服，累计在线送NAS！</div>
+    <div id="navtxt" class="navtxt">邀好友同玩 钻石送不停</div>
     <div class="detailtxt">
       <div>
         <router-link to="/TextPage">首页</router-link>
         >
         <router-link :to="{ path: '/TextPage', query:{ activeName: 'third' }}">活动</router-link>
-        > 庆开服，累计在线送NAS！
+        > 邀好友同玩 钻石送不停
       </div>
       <div>2018-6-15</div>
     </div>
     <hr class="hrbiu">
     <div id="content" class="content">
 
-      开服活动第二弹：庆开服，累计在线送NAS！<br>
+      星云链收款顶视角挂机爆肝游戏《异虫危机》今日开服，邀好友同玩送钻石！<br><br/>
 
 
-      活动时间：2018年6月15日 — 2018年6月19日<br>
       活动规则：<br>
-      为庆祝开服，《异虫危机》将为所有支持本游戏的玩家送上大礼！<a>自6月15日起至6月19日18时，凡是累计登录游戏三天，且每天累计登录3小时并且冲关数超过10层的玩家，</a>将获得由官方直接派发的NAS奖励。<br>
+      即日起，凡注册成功用户均可以获得邀请码一枚。邀好友同玩，被邀请人注册账号时填入邀请码，在被邀请人正式进入游戏后，邀请人和被邀请人均可获得一笔钻石奖励。
+      被邀请人注册成功后也将获得邀请码。<a>邀请码使用次数无限制，但每个账号仅可以被邀请一次。</a><br>
+      活动时间：长期有效<br>
       <br>
 
 
-      参与规则：注册星云钱包即可<br>
+      奖励规则：<br>
 
 
-      更多详细内容请关注《异虫危机》官方公众号ycwj_bipa 或扫下方二维码：<br>
-      <center><img src="../assets/img/qingkaifu.jpg"></center>
+      <a>邀请成功后，邀请人每次可获得钻石50颗。</a><br>
+      <a>被邀请人使用邀请码后进入游戏即可获得钻石30颗。</a><br/>
+      <br/>
+      <i style="color:gray">注：游戏内充值钻石价格为1Nas=500颗。</i>
       <br>
       <br>
       <div class="bottomtxt">本活动最终解释权归智玩网络所有</div>

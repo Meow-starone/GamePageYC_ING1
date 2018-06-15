@@ -7,6 +7,7 @@ import Tittle2 from '@/components/Tittle2'
 import Tittle3 from '@/components/Tittle3'
 import Tittle4 from '@/components/Tittle4'
 import Tittle5 from '@/components/Tittle5'
+import Recharge from '@/components/Recharge'
 
 Vue.use(Router)
 
@@ -47,5 +48,14 @@ export default new Router({
       name: 'Tittle5',
       component: Tittle5
     },
+    {
+      path: '/recharge',
+      name: 'Recharge',
+      component: Recharge
+    },
+    {
+      path: '*',
+      redirect: '/'
+    }
   ]
 })
